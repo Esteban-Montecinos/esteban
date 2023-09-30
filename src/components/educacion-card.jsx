@@ -1,5 +1,5 @@
 import { Card, CardBody } from "@nextui-org/card";
-import {Image} from "@nextui-org/image";
+import { Image } from "@nextui-org/image";
 
 export default function EducacionCard({ fecha, nombre, titulo, image_url }) {
   return (
@@ -7,8 +7,9 @@ export default function EducacionCard({ fecha, nombre, titulo, image_url }) {
       <CardBody className="flex flex-col items-center justify-center md:justify-between md:flex-row">
         <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
           <Image
+            radius="none"
             src={image_url}
-            className="w-20 h-20 aspect-square"
+            className="object-cover w-20 h-20 aspect-square"
             alt={`Logo de ${nombre}`}
           />
           <div className="flex flex-col">

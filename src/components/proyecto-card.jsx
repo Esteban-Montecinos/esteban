@@ -11,7 +11,7 @@ export default function ProyectoCard({
   return (
     <Card className="flex flex-col w-full p-1 transition-colors bg-black border border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-950">
       <CardHeader className="px-4">
-        <h4 className="text-2xl font-bold text-white">{titulo}</h4>
+        <h2 className="text-2xl font-bold text-white">{titulo}</h2>
       </CardHeader>
       <CardBody className="justify-between h-full px-4 py-0 text-small text-zinc-400">
         <p>{descripcion}</p>
