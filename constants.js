@@ -18,28 +18,7 @@ import {
   IconBrandPhp,
   IconBrandCSharp,
 } from "@tabler/icons-react";
-export const contactos = [
-  {
-    nombre: "LinkedIn",
-    icono: <IconBrandLinkedin className="w-20 h-20" aria-label="LinkedIn" />,
-    url: "https://www.linkedin.com/in/esteban-montecinos/",
-    user: "esteban-montecinos",
-  },
-  {
-    nombre: "GitHub",
-    icono: <IconBrandGithub className="w-20 h-20" aria-label="GitHub" />,
-    url: "https://github.com/Esteban-Montecinos",
-    user: "Esteban-Montecinos",
-  },
-  {
-    nombre: "Correo electrónico",
-    icono: (
-      <IconBrandGmail className="w-20 h-20" aria-label="Correo electrónico" />
-    ),
-    url: "mailto:estebanmontecinos2001@gmail.com",
-    user: "estebanmontecinos2001",
-  },
-];
+
 export const proyectos = [
   {
     id: "1",
@@ -85,20 +64,6 @@ export const proyectos = [
     ],
   },
   {
-    id: "4",
-    titulo: "CS:GO noticias y partidas",
-    descripcion:
-      "Plataforma de desarrollo que presenta información relativa a noticias y resultados de encuentros en diversos torneos de CS:GO. Los datos se obtienen mediante una API no oficial proporcionada por HLTV.",
-    git_url:
-      "https://github.com/Esteban-Montecinos/csgo-matches-and-tournaments",
-    web_url: "https://csgo-matches-and-tournaments.vercel.app/",
-    etiquetas: [
-      { nombre: "React" },
-      { nombre: "NextJS" },
-      { nombre: "TailwindCSS" },
-    ],
-  },
-  {
     id: "5",
     titulo: "*MNTodo List",
     descripcion:
@@ -124,6 +89,20 @@ export const proyectos = [
       { nombre: "NextJS" },
       { nombre: "TailwindCSS" },
       { nombre: "Supabase" },
+    ],
+  },
+  {
+    id: "7",
+    titulo: "Steam Finder Connect",
+    descripcion:
+      "Una aplicación web desarrollada con Next.js y web scraping para proporcionar a los usuarios una interfaz amigable para buscar perfiles de usuarios en la plataforma Steam. pueden buscar perfiles con su respectivo ID de steam o por el vanity name",
+    git_url: "https://github.com/Esteban-Montecinos/steam-finder",
+    web_url: "https://steam-finder-connect.vercel.app/",
+    etiquetas: [
+      { nombre: "React" },
+      { nombre: "NextJS" },
+      { nombre: "TailwindCSS" },
+      { nombre: "Cheerio" },
     ],
   },
 ];
@@ -219,6 +198,28 @@ export const tecnologias = [
   {
     nombre: "GitHub",
     icon: <IconBrandGithub className="w-20 h-20" aria-label="GitHub" />,
+  },
+];
+export const contactos = [
+  {
+    nombre: "LinkedIn",
+    icono: <IconBrandLinkedin className="w-20 h-20" aria-label="LinkedIn" />,
+    url: "https://www.linkedin.com/in/esteban-montecinos/",
+    user: "esteban-montecinos",
+  },
+  {
+    nombre: "GitHub",
+    icono: <IconBrandGithub className="w-20 h-20" aria-label="GitHub" />,
+    url: "https://github.com/Esteban-Montecinos",
+    user: "Esteban-Montecinos",
+  },
+  {
+    nombre: "Correo electrónico",
+    icono: (
+      <IconBrandGmail className="w-20 h-20" aria-label="Correo electrónico" />
+    ),
+    url: "mailto:estebanmontecinos2001@gmail.com",
+    user: "estebanmontecinos2001",
   },
 ];
 export const cv = "https://drive.google.com/file/d/1iC8Ipp2WAWzQWqabJQgthpb4--a-dkqT/view?usp=sharing"
