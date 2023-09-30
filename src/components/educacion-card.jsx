@@ -8,7 +8,7 @@ export default function EducacionCard({ fecha, nombre, titulo, image_url }) {
         <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
           <Image
             src={image_url}
-            className="w-20 h-20"
+            className="w-20 h-20 aspect-square"
             alt={`Logo de ${nombre}`}
           />
           <div className="flex flex-col">
