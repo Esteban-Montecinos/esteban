@@ -1,0 +1,53 @@
+---
+title: Server Action Cargando 🔁
+description: Mostrar un estado de carga en un formulario con server action en Next.js 13
+date: 09/28/2023
+---
+
+Puede activar las server action en su proyecto Next.js habilitando la bandera **experimental**
+`serverActions`.
+
+```js next.config.js
+module.exports = {
+  experimental: {
+    serverActions: true,
+  },
+};
+```
+
+
+```jsx app/page.jsx
+
+import FormSubmit from "@/components/form-submit"
+function Page() {
+    async function post(formData) {
+        "use server"
+        ...
+    }
+
+    return (
+        <form action={post}> 
+            ...
+            <FormSubmit
+                pendingState="Posting...">
+                Post
+            </FormSubmit>
+        </form>
+    )
+}
+```
+
+```jsx app/components/form-submit.jsx
+"use client"
+
+import { experimental_useFormStatus as useFormStatus } from "react-dom"
+
+function FormSubmit({children, pendingState, ...props}) {
+    const { pending } = useFormStatus()
+    return (
+        <button disabled={pending} {...props}>
+            {pending && pendingState}
+            {!pending && children}
+        </button>
+    )
+}

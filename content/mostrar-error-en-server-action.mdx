@@ -1,8 +1,10 @@
 ---
-title: Mostrar error en un formulario con server action en Next.js 13 
+title: Server Action Error ❌
+description: Mostrar error en un formulario con server action en Next.js 13
+date: 09/15/2023
 ---
 
-Puede activar las server actions en su proyecto Next.js habilitando la bandera **experimental**
+Puede activar las server action en su proyecto Next.js habilitando la bandera **experimental**
 `serverActions`.
 
 ```js next.config.js
@@ -30,17 +32,17 @@ export default function ErrorPage() {
       action={fetchData}
       className="flex flex-col items-start w-full max-w-lg gap-4 p-4 m-auto bg-white rounded-lg"
     >
-      <label className="text-sm text-neutral-950" htmlFor="name">
+      <label className="text-sm text-zinc-950" htmlFor="name">
         Name
       </label>
       <input
-        className="w-full p-2 bg-transparent border rounded-md text-neutral-950 border-neutral-950"
+        className="w-full p-2 bg-transparent border rounded-md text-zinc-950 border-zinc-950"
         type="text"
         id="name"
         name="name"
         placeholder="rick"
       />
-      <button className="w-full p-2 text-sm rounded-md bg-neutral-950 text-neutral-200">
+      <button className="w-full p-2 text-sm rounded-md bg-zinc-950 text-zinc-200">
         Fetch Data
       </button>
     </Form>

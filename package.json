@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.1.13",
     "@tabler/icons-react": "^2.35.0",
     "autoprefixer": "10.4.16",
     "clsx": "^2.0.0",
     "eslint": "8.50.0",
     "eslint-config-next": "13.5.2",
+    "framer-motion": "^10.16.4",
     "gray-matter": "^4.0.3",
     "next": "13.5.2",
     "next-mdx-remote": "^4.4.1",

@@ -1,22 +1,22 @@
-import Link from "next/link";
-import { getAllFilesMetadata } from "../../lib/mdx";
+import ProyectosList from "@/components/proyectos-list";
+import { Divider } from "@nextui-org/divider";
+import { contactos, educacion, proyectos, tecnologias } from "../../constants";
+import EducacionList from "@/components/educacion-list";
+import TecnologiasList from "@/components/tecnologias-list";
+import Contacto from "@/components/contacto";
+import Header from "@/components/header";
 export default function Home() {
-  const posts = getAllFilesMetadata();
   return (
-    <main className="flex flex-col items-center min-h-screen p-2">
-      <h1>Esteban Montecinos</h1>
-
-      <div className="flex flex-col">
-        {posts.map((post) => (
-          <Link
-            key={post.slug}
-            href={`blog/${post.slug}`}
-            className="px-5 py-4 transition-colors border border-transparent rounded-lg group hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          >
-            <h2 className={`mb-3 text-2xl font-semibold`}>{post.title}</h2>
-          </Link>
-        ))}
-      </div>
+    <main className="flex flex-col flex-wrap items-start w-full gap-8 px-4 py-10 mx-auto max-w-7xl">
+      <Header/>
+      <Divider className="my-4" />
+      <ProyectosList proyectos={proyectos} />
+      <Divider className="my-4" />
+      <TecnologiasList tecnologias={tecnologias} />
+      <Divider className="my-4" />
+      <EducacionList educacion={educacion} />
+      <Divider className="my-4" />
+      <Contacto contactos={contactos} />
     </main>
   );
 }
