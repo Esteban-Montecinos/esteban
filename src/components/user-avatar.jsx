@@ -12,6 +12,7 @@ import {
   IconBrandLinkedin,
   IconFileCv,
 } from "@tabler/icons-react";
+import { cv } from "../../constants";
 export default function UserAvatar() {
   return (
     <Dropdown
@@ -60,7 +61,7 @@ export default function UserAvatar() {
           <Link
             color="foreground"
             className="flex flex-row items-center w-full"
-            href="https://drive.google.com/file/d/1uOm1SWEQkp40pDsZp8r1K2WhJp7YfES1/view?usp=sharing"
+            href={cv}
             size="sm"
             isExternal
           >

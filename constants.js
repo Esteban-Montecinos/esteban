@@ -221,3 +221,4 @@ export const tecnologias = [
     icon: <IconBrandGithub className="w-20 h-20" aria-label="GitHub" />,
   },
 ];
+export const cv = "https://drive.google.com/file/d/1iC8Ipp2WAWzQWqabJQgthpb4--a-dkqT/view?usp=sharing"
