@@ -1,7 +1,7 @@
 'use client';
  
 import { MDXRemote } from 'next-mdx-remote';
-import { Pre } from '../components/pre';
+import { Pre } from './pre';
  
 const MdxComponents = {
     pre: (props) => <Pre {...props} />,

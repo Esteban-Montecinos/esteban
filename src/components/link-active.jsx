@@ -12,8 +12,8 @@ export default function NavigationList({ href, name }) {
     <Link
       href={href}
       className={`${
-        isActive ? "text-zinc-50 font-medium" : "text-zinc-200"
-      } text-sm text-inherit`}
+        isActive ? "text-white font-light" : "text-zinc-200 font-extralight"
+      } text-lg text-inherit hover:text-white hover:underline`}
     >
       {name}
     </Link>

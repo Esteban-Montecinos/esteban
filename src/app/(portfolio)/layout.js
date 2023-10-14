@@ -1,7 +1,8 @@
-import "./globals.css";
+import "../globals.css";
 import { Inter } from "next/font/google";
-import { Providers } from "./providers";
-import NavigationMenu from "../components/navigation-menu";
+import { Providers } from "../providers";
+import NavigationMenu from "../../components/navigation-menu";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,11 +15,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" className="dark">
       <body
-        className={`${inter.className} bg-black text-zinc-100 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 min-h-screen`}
+        className={`${inter.className} bg-black min-h-screen text-white`}
       >
         <Providers>
-          <NavigationMenu />
+          <NavigationMenu/>
           {children}
+          <Footer/>
         </Providers>
       </body>
     </html>

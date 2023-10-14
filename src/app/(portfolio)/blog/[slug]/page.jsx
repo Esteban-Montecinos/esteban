@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { getFileBySlug } from "../../../../lib/mdx";
-import { MdxContent } from "../../mdx-content";
+import { getFileBySlug } from "../../../../../lib/mdx";
+import { MdxContent } from "../../../../components/mdx-content";
 import { Divider } from "@nextui-org/divider";
 import { IconArrowNarrowLeft } from "@tabler/icons-react";
-import { formatDate } from "../../../../lib/fecha-format";
+import { formatDate } from "../../../../../lib/fecha-format";
 export async function generateMetadata({ params: { slug } }) {
   const { frontmatter } = await getFileBySlug(slug);
   return {

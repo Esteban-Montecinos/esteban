@@ -1,3 +1,5 @@
+import ico from "@/assets/ico.webp"
+import inacap from "@/assets/inacap.webp"
 import {
   IconBrandGithub,
   IconBrandLinkedin,
@@ -112,111 +114,111 @@ export const educacion = [
     fecha: "Agosto 2021 - Diciembre 2022",
     nombre: "Inacap sede Osorno",
     titulo: "Ingeniería en informática",
-    image_url:
-      "https://jvxhgyidasjvhhfycxwi.supabase.co/storage/v1/object/public/experiencia/inacap.webp",
+    image_url: inacap.src
+      
   },
   {
     id: "2",
     fecha: "Marzo 2019 - Junio 2021",
     nombre: "Inacap sede Osorno",
     titulo: "Analista programador",
-    image_url:
-      "https://jvxhgyidasjvhhfycxwi.supabase.co/storage/v1/object/public/experiencia/inacap.webp",
+    image_url: inacap.src
+      
   },
   {
     id: "3",
     fecha: "Marzo 2017 - Diciembre 2018",
     nombre: "Instituto comercial Osorno",
     titulo: "Programador nivel medio",
-    image_url:
-      "https://jvxhgyidasjvhhfycxwi.supabase.co/storage/v1/object/public/experiencia/ico.webp",
+    image_url: ico.src
+      
   },
 ];
 export const tecnologias = [
   {
     nombre: "HTML5",
-    icon: <IconBrandHtml5 className="w-20 h-20" aria-label="HTML" />,
+    icon: <IconBrandHtml5 className="w-12 h-12" aria-label="HTML" stroke={1.2}/>,
   },
   {
     nombre: "CSS3",
-    icon: <IconBrandCss3 className="w-20 h-20" aria-label="CSS" />,
+    icon: <IconBrandCss3 className="w-12 h-12" aria-label="CSS" stroke={1.2}/>,
   },
   {
     nombre: "TailwindCSS",
-    icon: <IconBrandTailwind className="w-20 h-20" aria-label="Tailwind" />,
+    icon: <IconBrandTailwind className="w-12 h-12" aria-label="Tailwind" stroke={1.2}/>,
   },
   {
     nombre: "JavaScript",
-    icon: <IconBrandJavascript className="w-20 h-20" aria-label="JavaScript" />,
+    icon: <IconBrandJavascript className="w-12 h-12" aria-label="JavaScript" stroke={1.2}/>,
   },
   {
     nombre: "React",
-    icon: <IconBrandReact className="w-20 h-20" aria-label="React" />,
+    icon: <IconBrandReact className="w-12 h-12" aria-label="React" stroke={1.2}/>,
   },
   {
     nombre: "Next",
-    icon: <IconBrandNextjs className="w-20 h-20" aria-label="Next" />,
+    icon: <IconBrandNextjs className="w-12 h-12" aria-label="Next" stroke={1.2}/>,
   },
   {
     nombre: "Vite",
-    icon: <IconBrandVite className="w-20 h-20" aria-label="Vite" />,
+    icon: <IconBrandVite className="w-12 h-12" aria-label="Vite" stroke={1.2}/>,
   },
   {
     nombre: "Android",
-    icon: <IconBrandAndroid className="w-20 h-20" aria-label="Android" />,
+    icon: <IconBrandAndroid className="w-12 h-12" aria-label="Android" stroke={1.2}/>,
   },
   {
     nombre: "React Native",
     icon: (
-      <IconBrandReactNative className="w-20 h-20" aria-label="React Native" />
+      <IconBrandReactNative className="w-12 h-12" aria-label="React Native" stroke={1.2}/>
     ),
   },
   {
     nombre: "C#",
-    icon: <IconBrandCSharp className="w-20 h-20" aria-label="C#" />,
+    icon: <IconBrandCSharp className="w-12 h-12" aria-label="C#" stroke={1.2}/>,
   },
   {
     nombre: "PHP",
-    icon: <IconBrandPhp className="w-20 h-20" aria-label="PHP" />,
+    icon: <IconBrandPhp className="w-12 h-12" aria-label="PHP" stroke={1.2}/>,
   },
   {
     nombre: "Firebase",
-    icon: <IconBrandFirebase className="w-20 h-20" aria-label="Firebase" />,
+    icon: <IconBrandFirebase className="w-12 h-12" aria-label="Firebase" stroke={1.2}/>,
   },
   {
     nombre: "Supabase",
-    icon: <IconBrandSupabase className="w-20 h-20" aria-label="Supabase" />,
+    icon: <IconBrandSupabase className="w-12 h-12" aria-label="Supabase" stroke={1.2}/>,
   },
   {
     nombre: "NodeJs",
-    icon: <IconBrandNodejs className="w-20 h-20" aria-label="NodeJs" />,
+    icon: <IconBrandNodejs className="w-12 h-12" aria-label="NodeJs" stroke={1.2}/>,
   },
   {
     nombre: "Git",
-    icon: <IconBrandGit className="w-20 h-20" aria-label="Git" />,
+    icon: <IconBrandGit className="w-12 h-12" aria-label="Git" stroke={1.2}/>,
   },
   {
     nombre: "GitHub",
-    icon: <IconBrandGithub className="w-20 h-20" aria-label="GitHub" />,
+    icon: <IconBrandGithub className="w-12 h-12" aria-label="GitHub" stroke={1.2}/>,
   },
 ];
 export const contactos = [
   {
     nombre: "LinkedIn",
-    icono: <IconBrandLinkedin className="w-20 h-20" aria-label="LinkedIn" />,
+    icono: <IconBrandLinkedin className="w-12 h-12" aria-label="LinkedIn" stroke={1.5}/>,
     url: "https://www.linkedin.com/in/esteban-montecinos/",
     user: "esteban-montecinos",
   },
   {
     nombre: "GitHub",
-    icono: <IconBrandGithub className="w-20 h-20" aria-label="GitHub" />,
+    icono: <IconBrandGithub className="w-12 h-12" aria-label="GitHub" stroke={1.5}/>,
     url: "https://github.com/Esteban-Montecinos",
     user: "Esteban-Montecinos",
   },
   {
     nombre: "Correo electrónico",
     icono: (
-      <IconBrandGmail className="w-20 h-20" aria-label="Correo electrónico" />
+      <IconBrandGmail className="w-12 h-12" aria-label="Correo electrónico" stroke={1.5}/>
     ),
     url: "mailto:estebanmontecinos2001@gmail.com",
     user: "estebanmontecinos2001",

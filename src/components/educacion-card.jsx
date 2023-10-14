@@ -1,9 +1,8 @@
 import { Card, CardBody } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
-
-export default function EducacionCard({ fecha, nombre, titulo, image_url }) {
+export default function EducacionCard({ fecha, nombre, titulo, image_url}) {
   return (
-    <Card className="flex flex-col flex-1 w-full h-full p-4 transition-colors bg-black border border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-950">
+    <Card className="flex flex-col w-full h-full p-4 transition-colors bg-black border border-white md:border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-950 hover:border-white">
       <CardBody className="flex flex-col items-center justify-center md:justify-between md:flex-row">
         <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
           <Image
