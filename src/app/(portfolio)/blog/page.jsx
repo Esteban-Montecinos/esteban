@@ -7,26 +7,26 @@ export default function BlogPage() {
   const posts = getAllFilesMetadata();
   posts.sort((a, b) => new Date(b.date) - new Date(a.date));
   return (
-    <main className="flex flex-col items-center max-w-5xl gap-4 px-4 py-10 mx-auto">
+    <main className="flex flex-col items-center max-w-5xl gap-4 px-8 py-10 mx-auto h-[calc(100vh-100px)]">
       <h1 className="text-3xl font-bold text-zinc-100">Los últimos posts de mi blog aquí abajo 😺</h1>
 
-      <div className="grid w-full h-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 ">
+      <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 ">
         {posts.map((post) => (
           <article
             key={post.slug}
-            className="flex flex-col justify-between gap-2 p-2 transition-colors bg-black border rounded-xl border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-950 hover:border-white"
+            className="flex flex-col gap-2 p-3 transition-colors bg-black border rounded-xl border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-950 hover:border-white"
           >
-            <div className="flex flex-col gap-2 px-2">
-              <p className="text-sm text-zinc-400">{formatDate(post.date)}</p>
+            <div className="flex flex-col h-full gap-2">
+              <time dateTime={post.date} className="text-sm text-zinc-400">{formatDate(post.date)}</time>
               <Link href={`blog/${post.slug}`} className="text-lg font-semibold ">{post.title}</Link>
               <p className="mb-2 text-zinc-200">{post.description}</p>
+            </div>
             <Link
               href={`blog/${post.slug}`}
-              className="w-full p-2 text-sm text-center transition-colors rounded-md text-zinc-400 bg-zinc-800/80 hover:text-zinc-100 hover:bg-zinc-800"
+              className="flex items-center justify-center w-full p-2 text-sm transition-colors rounded-md justify-self-end text-zinc-400 bg-zinc-800/80 hover:text-zinc-100 hover:bg-zinc-800"
             >
               Leer Más
             </Link>
-            </div>
           </article>
         ))}
       </div>

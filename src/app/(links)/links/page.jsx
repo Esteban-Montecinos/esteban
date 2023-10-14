@@ -5,7 +5,7 @@ import NextLink from "next/link";
 import { cv } from "../../../../constants";
 export default function LinksPage() {
   return (
-    <main className="flex flex-col flex-wrap items-center w-full max-w-2xl gap-4 px-4 py-10 mx-auto text-zinc-950">
+    <main className="flex flex-col flex-wrap items-center w-full max-w-2xl gap-4 px-8 py-10 mx-auto text-zinc-950">
       <Image
         isBlurred
         radius="full"

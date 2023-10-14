@@ -20,7 +20,7 @@ export default function EducacionCard({ fecha, nombre, titulo, image_url}) {
             </p>
           </div>
         </div>
-        {fecha}
+        <time>{fecha}</time>
       </CardBody>
     </Card>
   );
