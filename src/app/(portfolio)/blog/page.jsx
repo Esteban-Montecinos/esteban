@@ -14,7 +14,7 @@ export default function BlogPage() {
         {posts.map((post) => (
           <article
             key={post.slug}
-            className="flex flex-col justify-between gap-2 p-2 transition-colors bg-black border border-white rounded-xl md:border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-950 hover:border-white"
+            className="flex flex-col justify-between gap-2 p-2 transition-colors bg-black border rounded-xl border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-950 hover:border-white"
           >
             <div className="flex flex-col gap-2 px-2">
               <p className="text-sm text-zinc-400">{formatDate(post.date)}</p>

@@ -1,9 +1,8 @@
 import ProyectosList from "@/components/proyectos-list";
 import { Divider } from "@nextui-org/divider";
-import { contactos, educacion, proyectos, tecnologias } from "../../../constants";
+import { educacion, proyectos, tecnologias } from "../../../constants";
 import EducacionList from "@/components/educacion-list";
 import TecnologiasList from "@/components/tecnologias-list";
-import Contacto from "@/components/contacto";
 import Header from "@/components/header";
 export default function Home() {
   return (

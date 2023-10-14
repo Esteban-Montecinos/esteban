@@ -12,7 +12,7 @@ export default function FooterContactos() {
       <li>
         <a
           href="https://github.com/Esteban-Montecinos"
-          className="flex flex-col items-center p-2 text-white transition-colors bg-black border border-white rounded-full md:text-zinc-400 md:border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-800 hover:text-white hover:border-white"
+          className="flex flex-col items-center p-2 text-white transition-colors bg-black border rounded-full md:text-zinc-400 border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-800 hover:text-white hover:border-white"
           target="_blank"
           rel="noopener noreferrer"
           title="GitHub"
@@ -24,7 +24,7 @@ export default function FooterContactos() {
       <li>
         <a
           href="https://www.linkedin.com/in/esteban-montecinos/"
-          className="flex flex-col items-center p-2 text-white transition-colors bg-black border border-white rounded-full md:text-zinc-400 md:border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-800 hover:text-white hover:border-white"
+          className="flex flex-col items-center p-2 text-white transition-colors bg-black border rounded-full md:text-zinc-400 border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-800 hover:text-white hover:border-white"
           target="_blank"
           rel="noopener noreferrer"
           title="LinkedIn"
@@ -36,7 +36,7 @@ export default function FooterContactos() {
       <li>
         <a
           href={cv}
-          className="flex flex-col items-center p-2 text-white transition-colors bg-black border border-white rounded-full md:text-zinc-400 md:border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-800 hover:text-white hover:border-white"
+          className="flex flex-col items-center p-2 text-white transition-colors bg-black border rounded-full md:text-zinc-400 border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-800 hover:text-white hover:border-white"
           target="_blank"
           rel="noopener noreferrer"
           title="Currículum Vitae"
@@ -48,7 +48,7 @@ export default function FooterContactos() {
       <li>
         <a
           href="mailto:estebanmontecinos2001@gmail.com"
-          className="flex flex-col items-center p-2 text-white transition-colors bg-black border border-white rounded-full md:text-zinc-400 md:border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-800 hover:text-white hover:border-white"
+          className="flex flex-col items-center p-2 text-white transition-colors bg-black border rounded-full md:text-zinc-400 border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-800 hover:text-white hover:border-white"
           target="_blank"
           rel="noopener noreferrer"
           title="Gmail Esteban Montecinos"

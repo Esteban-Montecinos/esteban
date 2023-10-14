@@ -9,7 +9,7 @@ export default function ProyectoCard({
   etiquetas,
 }) {
   return (
-    <Card className="flex flex-col w-full p-1 transition-colors bg-black border border-white md:border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-950 hover:border-white">
+    <Card className="flex flex-col w-full p-1 transition-colors bg-black border border-zinc-800 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 hover:bg-zinc-950 hover:border-white">
       <CardHeader className="px-2 pb-2">
         <h2 className="text-2xl font-bold text-white">{titulo}</h2>
       </CardHeader>

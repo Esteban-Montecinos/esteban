@@ -202,26 +202,4 @@ export const tecnologias = [
     icon: <IconBrandGithub className="w-12 h-12" aria-label="GitHub" stroke={1.2}/>,
   },
 ];
-export const contactos = [
-  {
-    nombre: "LinkedIn",
-    icono: <IconBrandLinkedin className="w-12 h-12" aria-label="LinkedIn" stroke={1.5}/>,
-    url: "https://www.linkedin.com/in/esteban-montecinos/",
-    user: "esteban-montecinos",
-  },
-  {
-    nombre: "GitHub",
-    icono: <IconBrandGithub className="w-12 h-12" aria-label="GitHub" stroke={1.5}/>,
-    url: "https://github.com/Esteban-Montecinos",
-    user: "Esteban-Montecinos",
-  },
-  {
-    nombre: "Correo electrónico",
-    icono: (
-      <IconBrandGmail className="w-12 h-12" aria-label="Correo electrónico" stroke={1.5}/>
-    ),
-    url: "mailto:estebanmontecinos2001@gmail.com",
-    user: "estebanmontecinos2001",
-  },
-];
 export const cv = "https://drive.google.com/file/d/1iC8Ipp2WAWzQWqabJQgthpb4--a-dkqT/view?usp=sharing"
