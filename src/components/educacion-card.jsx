@@ -8,8 +8,11 @@ export default function EducacionCard({ fecha, nombre, titulo, image_url}) {
           <Image
             radius="none"
             src={image_url}
-            className="object-cover w-20 h-20 aspect-square"
+            loading="lazy"
+            className="object-cover aspect-square"
             alt={`Logo de ${nombre}`}
+            width={80}
+            height={80}
           />
           <div className="flex flex-col">
             <p className="text-lg font-bold leading-relaxed tracking-wide text-white">

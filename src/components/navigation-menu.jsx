@@ -31,7 +31,7 @@ export default function NavigationMenu() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <p className="text-sm font-extralight">{new Date().getFullYear()}</p>
+        <p className="text-sm font-extralight">2023</p>
       </NavbarContent>
     </Navbar>
   );

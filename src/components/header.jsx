@@ -8,9 +8,9 @@ export default function Header() {
           <h1 className="text-4xl mb-4 font-normal [text-wrap:balance] md:text-6xl ">
             Hola, mi nombre es <strong>Esteban Montecinos.</strong>
           </h1>
-          <h3 className="text-xl font-normal [text-wrap:balance] md:text-2xl ">
+          <h2 className="text-xl font-normal [text-wrap:balance] md:text-2xl ">
             Ingeniero en Informática y desarrollador <strong>Front-end.</strong>
-          </h3>
+          </h2>
         </header>
 
         <p className="text-sm leading-relaxed [text-wrap:balance] tracking-wide text-left md:text-lg text-zinc-400">
