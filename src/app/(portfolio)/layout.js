@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" className="dark">
       <body
-        className={`${inter.className} bg-black min-h-screen text-white`}
+        className={`${inter.className} bg-black min-h-screen bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 text-white`}
       >
         <Providers>
           <NavigationMenu/>
