@@ -10,6 +10,7 @@ export default function LinksPage() {
         isBlurred
         radius="full"
         width={90}
+        height={90}
         src="https://github.com/Esteban-Montecinos.png"
         alt="Esteban Montecinos"
       />
