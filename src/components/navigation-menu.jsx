@@ -31,7 +31,9 @@ export default function NavigationMenu() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
+      <NavbarItem>
         <p className="text-sm font-extralight">2023</p>
+      </NavbarItem>
       </NavbarContent>
     </Navbar>
   );
