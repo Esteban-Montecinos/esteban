@@ -16,7 +16,7 @@ export default function NavigationMenu() {
       content: [
         "gap-5"
       ]}}>
-      <NavbarBrand className="hidden sm:block ">
+      <NavbarBrand>
         <Avatar src="https://github.com/Esteban-Montecinos.png" aria-label="Foto de Esteban Montecinos"/>
       </NavbarBrand>
       <NavbarContent justify="center">
@@ -25,9 +25,6 @@ export default function NavigationMenu() {
         </NavbarItem>
         <NavbarItem>
           <NavigationList href="/blog" name="Blog" />
-        </NavbarItem>
-        <NavbarItem>
-          <NavigationList href="/links" name="Links" />
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
