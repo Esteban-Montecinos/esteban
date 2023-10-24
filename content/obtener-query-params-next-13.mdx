@@ -1,0 +1,33 @@
+---
+title: Obtener Query Params 🧾
+description: Como obtener Query Params en un componente servidor de Next.js 13
+date: 10/24/2023
+---
+`searchParams` obtiene un objeto que contiene los Query Params de la URL actual. por ejemplo:
+en la URL: `/?name=Esteban`, searchParams: `{ name : 'Esteban' }`
+
+El siguiente componente recibe un valor por props y lo muestra junto al mensaje 'Hola'.
+
+```jsx app/components/hola.jsx
+function Hola({ value }) {
+  return <h1>Hola { value }</h1>;
+}
+
+export default Hola;
+```
+
+El `page.jsx` obtiene las `searchParams` para luego mandarlas al componente creado anteriormente específicamente el valor de `searchParams.name`.
+
+```jsx app/page.jsx
+import Hola from '@/components/hola'
+
+function page({ searchParams }) {
+    return(
+        <Hola value={ searchParams.name } /
+    )
+}
+```
+
+---
+
+- `searchParams` devuelve un objeto JavaScript simple y no una `URLSearchParams` instancia.
