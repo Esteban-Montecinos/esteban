@@ -16,13 +16,13 @@ export default function LinksPage() {
       />
       <h1 className="text-2xl font-medium text-center text-zinc-100">Esteban Montecinos</h1>
       <NextLink
-        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900"
+        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80"
         href="/"
       >
         Portafolio
       </NextLink>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900"
+        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 "
         href={cv}
         size="sm"
         isExternal
@@ -30,7 +30,7 @@ export default function LinksPage() {
         Currículum Vitae
       </Link>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900"
+        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80"
         href="mailto:estebanmontecinos2001@gmail.com"
         size="sm"
         isExternal
@@ -38,7 +38,7 @@ export default function LinksPage() {
         Gmail
       </Link>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900"
+        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80"
         href="https://www.linkedin.com/in/esteban-montecinos/"
         size="sm"
         isExternal
@@ -46,7 +46,7 @@ export default function LinksPage() {
         LinkedIn
       </Link>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900"
+        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80"
         href="https://github.com/Esteban-Montecinos"
         size="sm"
         isExternal
@@ -54,7 +54,7 @@ export default function LinksPage() {
         GitHub
       </Link>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900"
+        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80"
         href="https://www.instagram.com/estebannmontecinos/"
         size="sm"
         isExternal

@@ -19,10 +19,9 @@ export default function ProyectoCard({
           {etiquetas.map(({ nombre }) => (
             <Chip
               key={nombre}
+              variant="flat"
               size="sm"
               radius="sm"
-              color="default"
-              variant="dot"
             >
               {nombre}
             </Chip>
