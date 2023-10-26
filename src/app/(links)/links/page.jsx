@@ -5,24 +5,25 @@ import NextLink from "next/link";
 import { cv } from "../../../../constants";
 export default function LinksPage() {
   return (
-    <main className="flex flex-col flex-wrap items-center w-full max-w-2xl gap-4 px-8 py-10 mx-auto text-zinc-950">
+    <main className="flex flex-col flex-wrap items-center w-full max-w-2xl gap-4 px-4 py-10 mx-auto text-zinc-950">
       <Image
         isBlurred
         radius="full"
         width={90}
         height={90}
+        className="mb-4"
         src="https://github.com/Esteban-Montecinos.png"
         alt="Esteban Montecinos"
       />
-      <h1 className="text-2xl font-medium text-center text-zinc-100">Esteban Montecinos</h1>
+      <h1 className="mb-6 text-2xl font-medium text-center text-white">Esteban Montecinos</h1>
       <NextLink
-        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium transition-colors bg-white border-2 border-white rounded-full text-zinc-400 hover:bg-black hover:text-white"
         href="/"
       >
         Portafolio
       </NextLink>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80 "
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium transition-colors bg-white border-2 border-white rounded-full text-zinc-400 hover:bg-black hover:text-white"
         href={cv}
         size="sm"
         isExternal
@@ -30,7 +31,7 @@ export default function LinksPage() {
         Currículum Vitae
       </Link>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium transition-colors bg-white border-2 border-white rounded-full text-zinc-400 hover:bg-black hover:text-white"
         href="mailto:estebanmontecinos2001@gmail.com"
         size="sm"
         isExternal
@@ -38,7 +39,7 @@ export default function LinksPage() {
         Gmail
       </Link>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium transition-colors bg-white border-2 border-white rounded-full text-zinc-400 hover:bg-black hover:text-white"
         href="https://www.linkedin.com/in/esteban-montecinos/"
         size="sm"
         isExternal
@@ -46,7 +47,7 @@ export default function LinksPage() {
         LinkedIn
       </Link>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium transition-colors bg-white border-2 border-white rounded-full text-zinc-400 hover:bg-black hover:text-white"
         href="https://github.com/Esteban-Montecinos"
         size="sm"
         isExternal
@@ -54,7 +55,7 @@ export default function LinksPage() {
         GitHub
       </Link>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-lg font-medium text-white transition-colors bg-black border rounded-full border-zinc-800 hover:border-white hover:bg-zinc-900 bg-gradient-to-tl from-black/80 via-zinc-600/20 to-black/80"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium transition-colors bg-white border-2 border-white rounded-full text-zinc-400 hover:bg-black hover:text-white"
         href="https://www.instagram.com/estebannmontecinos/"
         size="sm"
         isExternal
