@@ -10,14 +10,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className="dark">
-      <body
-        className={`${inter.className} bg-black bg-gradient-to-tl px-4 from-black/80 via-zinc-600/20 to-black/80 min-h-screen`}
+      <bodybg-gradient-to-tl
+        className={`${inter.className} bg-black min-h-screen`}
       >
       <Providers>
       
         { children }
       </Providers>
-        </body>
+        </bodybg-gradient-to-tl>
     </html>
   );
 }
