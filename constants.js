@@ -139,24 +139,24 @@ export const educacion = [
   {
     id: "1",
     fecha: "Agosto 2021 - Diciembre 2022",
-    nombre: "Inacap sede Osorno",
-    titulo: "Ingeniería en informática",
+    nombre: "Inacap Sede Osorno",
+    titulo: "Ingeniería En Informática",
     image_url: inacap.src
       
   },
   {
     id: "2",
     fecha: "Marzo 2019 - Junio 2021",
-    nombre: "Inacap sede Osorno",
-    titulo: "Analista programador",
+    nombre: "Inacap Sede Osorno",
+    titulo: "Analista Programador",
     image_url: inacap.src
       
   },
   {
     id: "3",
     fecha: "Marzo 2017 - Diciembre 2018",
-    nombre: "Instituto comercial Osorno",
-    titulo: "Programador nivel medio",
+    nombre: "Instituto Comercial Osorno",
+    titulo: "Programador Nivel Medio",
     image_url: ico.src
       
   },
