@@ -9,7 +9,7 @@ export default function Header() {
             Hola, mi nombre es <strong>Esteban Montecinos.</strong>
           </h1>
           <h2 className="text-xl font-normal [text-wrap:balance] md:text-2xl ">
-            Ingeniero en Informática y desarrollador <strong>Front-end.</strong>
+            Ingeniero en Informática y desarrollador <strong>FullStack.</strong>
           </h2>
         </header>
 
