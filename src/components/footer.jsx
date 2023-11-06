@@ -15,8 +15,7 @@ export default function Footer() {
             aria-label="Instagram"
           >
             <Avatar
-              className="mt-4"
-              size="md"
+              className="mt-4 w-11 h-11"
               src="https://github.com/Esteban-Montecinos.png"
             />
           </a>
