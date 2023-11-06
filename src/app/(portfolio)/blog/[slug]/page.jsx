@@ -13,15 +13,15 @@ export async function generateMetadata({ params: { slug } }) {
 export default async function page({ params: { slug } }) {
   const { serialized, frontmatter } = await getFileBySlug(slug);
   return (
-    <article className="prose prose-sm md:prose-base lg:prose-lg xl:prose-xl prose-zinc !prose-invert mx-auto px-4 py-10">
+    <article className="dark:text-white text-black prose prose-sm md:prose-base lg:prose-lg xl:prose-xl prose-zinc !prose-invert mx-auto px-4 py-10">
       <Link
         href="/blog"
-        className="inline-flex items-center text-sm no-underline transition-colors hover:text-zinc-100 text-zinc-400"
+        className="inline-flex items-center text-sm no-underline transition-colors dark:hover:text-zinc-100 hover:text-zinc-400 dark:text-zinc-400 text-zinc-700"
       >
         <IconArrowNarrowLeft className="mr-1" /> Volver al Blog
       </Link>
-      <p className="text-sm text-zinc-400">{formatDate(frontmatter.date)}</p>
-      <h1 className="text-5xl">{frontmatter.title}</h1>
+      <p className="text-sm dark:text-zinc-400 text-zinc-700">{formatDate(frontmatter.date)}</p>
+      <h1 className="text-5xl text-black dark:text-white">{frontmatter.title}</h1>
       <p>{frontmatter.description}</p>
       <Divider className="my-2" />
       <MdxContent source={serialized} />

@@ -13,7 +13,7 @@ export default function Header() {
           </h2>
         </header>
 
-        <p className="text-sm leading-relaxed [text-wrap:balance] tracking-wide text-left md:text-lg text-zinc-400">
+        <p className="text-sm leading-relaxed [text-wrap:balance] tracking-wide text-left md:text-lg dark:text-zinc-400 text-zinc-700">
           Me gusta trabajar con <strong>React, Next.js y TailwindCSS</strong>.
           Mi enfoque está en crear <strong>experiencias</strong> de usuario
           intuitivas y receptivas que mejoren la interacción entre las personas
