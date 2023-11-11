@@ -12,7 +12,7 @@ export default function NavigationList({ href, name }) {
     <Link
       href={href}
       className={`${
-        isActive ? "dark:text-white text-black font-light underline" : "dark:text-zinc-200 text-zinc-600 font-extralight"
+        isActive ? "dark:text-white text-black font-normal underline" : "dark:text-zinc-200 text-zinc-600 font-light"
       } text-lg text-inherit dark:hover:text-white hover:text-black`}
     >
       {name}

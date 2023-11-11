@@ -9,7 +9,8 @@ import NavigationList from "./link-active";
 
 export default function NavigationMenu() {
   return (
-    <Navbar isBordered maxWidth="lg" height="88px" classNames={{
+    <Navbar maxWidth="lg" classNames={{
+      base:["backdrop-blur border-b dark:border-zinc-800 border-zinc-400 h-[88px]"],
       wrapper:[
         "px-8"
       ],
@@ -17,7 +18,7 @@ export default function NavigationMenu() {
         "gap-5"
       ]}}>
       <NavbarBrand>
-        <Avatar src="https://github.com/Esteban-Montecinos.png" aria-label="Foto de Esteban Montecinos"/>
+        <Avatar size="lg" src="https://github.com/Esteban-Montecinos.png" aria-label="Foto de Esteban Montecinos"/>
       </NavbarBrand>
       <NavbarContent justify="center">
         <NavbarItem>
@@ -29,7 +30,7 @@ export default function NavigationMenu() {
       </NavbarContent>
       <NavbarContent justify="end">
       <NavbarItem>
-        <p className="text-sm font-extralight">2023</p>
+        <p className="text-sm font-light dark:text-zinc-400 text-zinc-700">2023</p>
       </NavbarItem>
       </NavbarContent>
     </Navbar>
