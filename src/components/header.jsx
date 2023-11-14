@@ -2,8 +2,8 @@ import FooterContactos from "./footer-contactos";
 
 export default function Header() {
   return (
-    <section className="flex flex-row w-full justify-between min-h-[calc(100vh-100px)]">
-      <article className="flex flex-col mt-40 md:mt-60">
+    <section className="flex flex-row w-full justify-center items-center min-h-[calc(100vh-100px)]">
+      <article className="flex flex-col">
         <header className="my-4">
           <h1 className="text-4xl break-words mb-4 font-light [text-wrap:balance] md:text-6xl ">
             Hola, soy{" "}

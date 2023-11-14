@@ -12,7 +12,7 @@ export default function FooterContactos() {
       <li>
         <a
           href="https://github.com/Esteban-Montecinos"
-          className="flex flex-col items-center p-2 transition-colors bg-white border border-black rounded-full dark:text-white dark:bg-black dark:border-white dark:hover:bg-zinc-800 hover:bg-zinc-400/60"
+          className="flex flex-col items-center p-2 transition-colors bg-white border border-black rounded-full dark:text-white dark:bg-black dark:border-white dark:hover:bg-lime-800 hover:bg-lime-400"
           target="_blank"
           rel="noopener noreferrer"
           title="GitHub"
@@ -24,7 +24,7 @@ export default function FooterContactos() {
       <li>
         <a
           href="https://www.linkedin.com/in/esteban-montecinos/"
-          className="flex flex-col items-center p-2 transition-colors bg-white border border-black rounded-full dark:text-white dark:bg-black dark:border-white dark:hover:bg-zinc-800 hover:bg-zinc-400/60"
+          className="flex flex-col items-center p-2 transition-colors bg-white border border-black rounded-full dark:text-white dark:bg-black dark:border-white dark:hover:bg-lime-800 hover:bg-lime-400"
           target="_blank"
           rel="noopener noreferrer"
           title="LinkedIn"
@@ -36,7 +36,7 @@ export default function FooterContactos() {
       <li>
         <a
           href={cv}
-          className="flex flex-col items-center p-2 transition-colors bg-white border border-black rounded-full dark:text-white dark:bg-black dark:border-white dark:hover:bg-zinc-800 hover:bg-zinc-400/60"
+          className="flex flex-col items-center p-2 transition-colors bg-white border border-black rounded-full dark:text-white dark:bg-black dark:border-white dark:hover:bg-lime-800 hover:bg-lime-400"
           target="_blank"
           rel="noopener noreferrer"
           title="Currículum Vitae"
@@ -48,7 +48,7 @@ export default function FooterContactos() {
       <li>
         <a
           href="mailto:estebanmontecinos2001@gmail.com"
-          className="flex flex-col items-center p-2 transition-colors bg-white border border-black rounded-full dark:text-white dark:bg-black dark:border-white dark:hover:bg-zinc-800 hover:bg-zinc-400/60"
+          className="flex flex-col items-center p-2 transition-colors bg-white border border-black rounded-full dark:text-white dark:bg-black dark:border-white dark:hover:bg-lime-800 hover:bg-lime-400"
           target="_blank"
           rel="noopener noreferrer"
           title="Gmail Esteban Montecinos"

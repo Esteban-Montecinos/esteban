@@ -1,5 +1,6 @@
+import { educacion } from "../../constants";
 import EducacionCard from "./educacion-card";
-export default function EducacionList({ educacion }) {
+export default function EducacionList() {
   return (
     <section className="flex flex-col w-full gap-2">
       <h2 className="text-3xl font-bold">Educación</h2>

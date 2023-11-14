@@ -1,6 +1,7 @@
 
+import { tecnologias } from '../../constants'
 import TecnologiaCard from './tecnologia-card'
-export default function TecnologiasList({tecnologias}) {
+export default function TecnologiasList() {
     
   return (
     <section className='flex flex-col w-full'>
