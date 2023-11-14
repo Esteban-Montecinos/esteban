@@ -11,7 +11,6 @@ export default function LinksPage() {
         radius="full"
         width={90}
         height={90}
-        className="mb-4"
         src="https://github.com/Esteban-Montecinos.png"
         alt="Esteban Montecinos"
       />

@@ -4,7 +4,22 @@ import { Providers } from "@/app/providers";
 import ThemeSwitcher from "@/app/theme-swicher";
 export const metadata = {
   title: "Enlaces | Esteban Montecinos",
-  description: "blog personal",
+  description: "Enlaces de Esteban Montecinos",
+  openGraph: {
+    title: 'Enlaces | Esteban Montecinos',
+    description: 'Enlaces de Esteban Montecinos',
+    url: 'https://estebanmontecinos.dev',
+    siteName: 'Esteban Montecinos',
+    images: [
+      {
+        url: '/links-qr-code.png',
+        width: 800,
+        height: 800,
+      },
+    ],
+    locale: 'es_CL',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({ children }) {
