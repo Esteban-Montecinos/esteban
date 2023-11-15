@@ -3,26 +3,37 @@ import { Link } from "@nextui-org/link";
 import NextLink from "next/link";
 
 import { cv } from "../../../../constants";
+import CopiarURL from "@/components/copiar-url";
+import CopiarPortapapeles from "@/components/copiar-portapapeles";
 export default function LinksPage() {
   return (
-    <main className="flex flex-col flex-wrap items-center w-full max-w-2xl gap-4 px-4 py-10 mx-auto dark:text-zinc-950 text-zinc-50">
-      <Image
-        isBlurred
-        radius="full"
-        width={90}
-        height={90}
-        src="https://github.com/Esteban-Montecinos.png"
-        alt="Esteban Montecinos"
-      />
-      <h1 className="mb-6 text-2xl font-medium text-center text-white">Esteban Montecinos</h1>
+    <main className="flex flex-col flex-wrap items-center w-full max-w-2xl gap-4 px-4 py-10 mx-auto text-white dark:text-black">
+      <div className="flex flex-row items-start justify-between w-full">
+        <CopiarURL />
+        <Image
+          isBlurred
+          radius="full"
+          width={90}
+          height={90}
+          src="https://github.com/Esteban-Montecinos.png"
+          alt="Esteban Montecinos"
+        />
+        <CopiarPortapapeles />
+      </div>
+      <h1 className="text-2xl font-medium text-center text-white">
+        Esteban Montecinos
+      </h1>
+      <p className="mb-6 text-black/75 dark:text-white/75">
+        Ingeniero en Informática.
+      </p>
       <NextLink
-        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-zinc-500 text-zinc-300 dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
         href="/"
       >
         Portafolio
       </NextLink>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-zinc-500 text-zinc-300 dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
         href={cv}
         size="sm"
         isExternal
@@ -30,15 +41,16 @@ export default function LinksPage() {
         Currículum Vitae
       </Link>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-zinc-500 text-zinc-300 dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
         href="mailto:estebanmontecinos2001@gmail.com"
         size="sm"
         isExternal
       >
         Gmail
       </Link>
+      <h2 className="text-black dark:text-white">Redes Sociales</h2>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-zinc-500 text-zinc-300 dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
         href="https://www.linkedin.com/in/esteban-montecinos/"
         size="sm"
         isExternal
@@ -46,7 +58,7 @@ export default function LinksPage() {
         LinkedIn
       </Link>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-zinc-500 text-zinc-300 dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
         href="https://github.com/Esteban-Montecinos"
         size="sm"
         isExternal
@@ -54,14 +66,13 @@ export default function LinksPage() {
         GitHub
       </Link>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-zinc-500 text-zinc-300 dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
         href="https://www.instagram.com/estebannmontecinos/"
         size="sm"
         isExternal
       >
         Instagram
       </Link>
-      
     </main>
   );
 }
