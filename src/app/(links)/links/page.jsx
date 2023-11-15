@@ -7,7 +7,7 @@ import CopiarURL from "@/components/copiar-url";
 import CopiarPortapapeles from "@/components/copiar-portapapeles";
 export default function LinksPage() {
   return (
-    <main className="flex flex-col flex-wrap items-center w-full max-w-2xl gap-4 px-4 py-10 mx-auto">
+    <main className="flex flex-col flex-wrap items-center w-full max-w-2xl gap-3 px-4 py-10 mx-auto">
       <div className="flex flex-row items-start justify-between w-full">
         <CopiarURL />
         <Image
@@ -23,7 +23,7 @@ export default function LinksPage() {
       <h1 className="text-2xl font-medium text-center text-black dark:text-white">
         Esteban Montecinos
       </h1>
-      <p className="mb-6 text-black/75 dark:text-white/75">
+      <p className="mb-4 text-black/75 dark:text-white/75">
         Ingeniero en Informática.
       </p>
       <NextLink
