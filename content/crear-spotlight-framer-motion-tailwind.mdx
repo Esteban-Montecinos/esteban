@@ -1,0 +1,72 @@
+---
+title: Spotlight con Framer Motion ✨
+description: Un Spotlight radial que sigue el mouse creado con Framer Motion y Tailwind CSS
+date: 11/16/2023
+---
+
+![Spotlight con Framer Motion](/spotlight.gif "Spotlight con Framer Motion")
+
+Un degradado radial que sigue el cursor del mouse mientras se mueve por la tarjeta.
+
+Utiliza Framer Motion para actualizar las coordenadas del mouse y volver a renderizar la posición del degradado fuera del ciclo de renderizado de React.
+
+## Bibliotecas utilizadas
+
+- Framer Motion
+- Tailwind CSS
+
+## Código
+
+```jsx demo.jsx
+"use client";
+import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
+
+export default function Demo() {
+  let mouseX = useMotionValue(0);
+  let mouseY = useMotionValue(0);
+
+  function handleMouseMove({ currentTarget, clientX, clientY }) {
+    let { left, top } = currentTarget.getBoundingClientRect();
+
+    mouseX.set(clientX - left);
+    mouseY.set(clientY - top);
+  }
+
+  return (
+    <article
+      className="relative max-w-md px-8 py-16 border shadow-2xl bg-neutral-900 group rounded-xl border-white/10"
+      onMouseMove={handleMouseMove}
+    >
+      <motion.div
+        className="absolute transition duration-300 opacity-0 pointer-events-none -inset-px rounded-xl group-hover:opacity-100"
+        style={{
+          background: useMotionTemplate`
+            radial-gradient(
+              450px circle at ${mouseX}px ${mouseY}px,
+              rgb(20, 184, 166, 0.2),
+              transparent 80%
+            )
+          `,
+        }}
+      />
+      <div>
+        <time
+          dateTime="2023-11-16"
+          className="text-sm font-semibold leading-7 text-zinc-400"
+        >
+          16 de noviembre de 2023
+        </time>
+        <div className="flex items-center mt-2 gap-x-2">
+          <span className="text-lg font-bold tracking-tight text-white">
+            Spotlight con Framer Motion ✨
+          </span>
+        </div>
+        <p className="mt-6 text-base leading-7 text-neutral-300">
+          Un Spotlight radial que sigue el mouse creado con Framer Motion y
+          Tailwind CSS
+        </p>
+      </div>
+    </article>
+  );
+}
+```

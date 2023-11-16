@@ -13,7 +13,7 @@ export async function generateMetadata({ params: { slug } }) {
 export default async function page({ params: { slug } }) {
   const { serialized, frontmatter } = await getFileBySlug(slug);
   return (
-    <article className="dark:text-white text-black prose prose-sm md:prose-base lg:prose-lg xl:prose-xl prose-zinc !prose-invert mx-auto px-4 py-10">
+    <article className="px-4 py-10 mx-auto prose-sm prose md:prose-base prose-zinc dark:prose-invert lg:prose-lg xl:prose-xl">
       <Link
         href="/blog"
         className="inline-flex items-center text-sm no-underline transition-colors dark:hover:text-zinc-100 hover:text-zinc-400 dark:text-zinc-400 text-zinc-700"

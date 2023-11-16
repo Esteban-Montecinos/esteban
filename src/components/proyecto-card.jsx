@@ -30,8 +30,8 @@ export default function ProyectoCard({
           background: useMotionTemplate`
             radial-gradient(
               450px circle at ${mouseX}px ${mouseY}px,
-              rgba(132, 204, 22, 0.1),
-              transparent 60%
+              rgba(132, 204, 22, 0.15),
+              transparent 80%
             )
           `,
         }}
