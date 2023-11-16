@@ -7,7 +7,7 @@ export default function BlogPage() {
   posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return (
-    <main className="flex flex-col items-center max-w-5xl gap-4 px-8 py-10 mx-auto h-[calc(100vh-100px)]">
+    <main className="flex flex-col items-center max-w-5xl gap-4 px-8 py-10 mx-auto mni-h-[calc(100vh-100px)]">
       <h1 className="text-3xl font-bold text-black dark:text-zinc-100">
         Los últimos posts de mi blog aquí abajo 😺
       </h1>
