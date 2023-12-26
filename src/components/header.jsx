@@ -10,7 +10,7 @@ export default function Header() {
             <strong className="font-semibold">Esteban Montecinos.</strong>
           </h1>
           <h2 className="text-xl font-normal [text-wrap:balance] md:text-2xl ">
-            Ingeniero en Informática y Desarrollador <strong>Fullstack.</strong>
+            Ingeniero en Informática y Desarrollador <strong>Full Stack.</strong>
           </h2>
         </header>
 

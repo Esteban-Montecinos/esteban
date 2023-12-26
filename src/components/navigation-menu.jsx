@@ -18,7 +18,7 @@ export default function NavigationMenu() {
         "gap-5"
       ]}}>
       <NavbarBrand>
-        <Avatar size="lg" src="https://github.com/Esteban-Montecinos.png" aria-label="Foto de Esteban Montecinos"/>
+        <Avatar size="lg" src="/esteban-avatar.webp" aria-label="Foto de Esteban Montecinos"/>
       </NavbarBrand>
       <NavbarContent justify="center">
         <NavbarItem>

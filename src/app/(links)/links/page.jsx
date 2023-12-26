@@ -15,7 +15,7 @@ export default function LinksPage() {
           radius="full"
           width={90}
           height={90}
-          src="https://github.com/Esteban-Montecinos.png"
+          src="/esteban-avatar.webp"
           alt="Esteban Montecinos"
         />
         <CopiarPortapapeles />
