@@ -1,10 +1,11 @@
 "use client";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
-import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
-import { Chip } from "@nextui-org/chip";
+import { formatDate } from "../../lib/fecha-format";
 
 export default function ProyectoCard({
+  img,
   titulo,
+  fecha,
   descripcion,
   git_url,
   web_url,
@@ -20,103 +21,90 @@ export default function ProyectoCard({
     mouseY.set(clientY - top);
   }
   return (
-    <Card
-      onMouseMove={handleMouseMove}
-      className="relative flex flex-col w-full p-1 transition-colors border group bg-zinc-400 dark:bg-black bg-gradient-to-tl dark:from-black/80 from-zinc-50 dark:via-zinc-600/20 via-zinc-200/60 dark:to-black/80 to-zinc-50 dark:hover:bg-zinc-950 hover:bg-zinc-400/60 dark:border-zinc-800 border-zinc-400 hover:dark:border-white/80 hover:border-black/80"
-    >
-      <motion.div
-        className="absolute transition duration-300 opacity-0 pointer-events-none -inset-px rounded-xl group-hover:opacity-100"
-        style={{
-          background: useMotionTemplate`
+    <div className="flex flex-col w-full gap-3 transition-all group">
+      <div
+        onMouseMove={handleMouseMove}
+        className="relative flex flex-col transition-all duration-75 group/img group-hover:-translate-y-2"
+      >
+        <img
+          src={img}
+          className="border-2 shadow-2xl rounded-xl size-full aspect-video dark:border-white/10 border-black/10"
+          alt={`proyecto desarrollado por Esteban Montecinos, ${titulo}`}
+        />
+        <motion.div
+          className="absolute transition duration-300 opacity-0 pointer-events-none group-hover/img:opacity-100 -inset-px rounded-xl"
+          style={{
+            background: useMotionTemplate`
             radial-gradient(
-              450px circle at ${mouseX}px ${mouseY}px,
-              rgba(132, 204, 22, 0.15),
-              transparent 80%
+              240px circle at ${mouseX}px ${mouseY}px,
+              rgba(132, 204, 22, 0.1),
+              transparent
             )
           `,
-        }}
-      />
-      <CardHeader className="px-2 pb-2">
-        <h2 className="text-2xl font-bold text-black dark:text-white">
-          {titulo}
-        </h2>
-      </CardHeader>
-      <CardBody className="justify-between h-full p-2 text-small dark:text-zinc-400 text-zinc-700">
-        <p className="dark:text-zinc-300 text-zinc-700">{descripcion}</p>
+          }}
+        />
+        <motion.div
+          className="absolute transition duration-300 opacity-100 pointer-events-none group-hover/img:opacity-50 -inset-px rounded-xl"
+          style={{
+            background: useMotionTemplate`
+            radial-gradient(
+              240px circle at ${mouseX}px ${mouseY}px,
+              rgba(132, 204, 22, 0.15),
+              transparent
+            )
+          `,
+          }}
+        />
+        <div className="absolute bottom-0 right-0 flex items-end justify-end gap-2 p-2 opacity-100 md:opacity-0 group-hover:opacity-100">
+          <a
+            className="px-3 py-1 inline-flex bg-[linear-gradient(110deg,rgb(39,39,42),45%,#4D4B4B,55%,rgb(39,39,42))] bg-[length:250%_100%] hover:animate-background-shine rounded-full w-fit group/demo border border-lime-400/20 text-white uppercase text-sm"
+            href={web_url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Demo
+            <span className="inline-flex ml-2 transition-transform group-hover/demo:-rotate-45 group-hover/demo:translate-x-1 motion-reduce:transform-none">
+              →
+            </span>
+          </a>
+          <a
+            className="px-3 py-1 inline-flex bg-[linear-gradient(110deg,rgb(39,39,42),45%,#4D4B4B,55%,rgb(39,39,42))] bg-[length:250%_100%] hover:animate-background-shine rounded-full w-fit group/demo border border-lime-400/20 text-white uppercase text-sm"
+            href={git_url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Repo
+            <span className="inline-flex ml-2 transition-transform group-hover/demo:-rotate-45 group-hover/demo:translate-x-1 motion-reduce:transform-none">
+              →
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-2">
+        <time
+          dateTime={fecha}
+          className="text-xs dark:text-lime-400 text-lime-800"
+        >
+          {formatDate(fecha)}
+        </time>
         <div className="flex flex-row flex-wrap max-w-xl gap-1">
           {etiquetas.map(({ nombre }) => (
-            <Chip
+            <span
               key={nombre}
-              variant="flat"
-              size="sm"
-              radius="sm"
-              classNames={{
-                base: "dark:bg-zinc-800 bg-white",
-                content: "dark:text-white text-black",
-              }}
+              className="inline-flex px-3 py-1 text-xs font-light rounded-full bg-neutral dark:bg-zinc-800 bg-zinc-100 dark:text-zinc-200 text-zinc-700"
             >
               {nombre}
-            </Chip>
+            </span>
           ))}
         </div>
-      </CardBody>
-      <CardFooter className="justify-between gap-4 px-2">
-        <a
-          className="w-full p-2 text-sm text-center text-white transition-colors bg-black border rounded-lg group/demo border-black/50 dark:border-white/50 dark:text-black dark:bg-white dark:hover:text-white hover:text-black dark:hover:bg-black hover:bg-white"
-          href={web_url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Demo{" "}
-          <span className="inline-block transition-transform group-hover/demo:translate-x-1 motion-reduce:transform-none">
-            →
-          </span>
-        </a>
-        <a
-          className="w-full p-2 text-sm text-center text-white transition-colors bg-black border rounded-lg group/repo border-black/50 dark:border-white/50 dark:text-black dark:bg-white dark:hover:text-white hover:text-black dark:hover:bg-black hover:bg-white"
-          href={git_url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Repositorio{" "}
-          <span className="inline-block transition-transform group-hover/repo:translate-x-1 motion-reduce:transform-none">
-            →
-          </span>
-        </a>
-      </CardFooter>
-    </Card>
-  );
-}
-{
-  /* <div
-  className="relative max-w-md px-8 py-16 bg-gray-900 border shadow-2xl group rounded-xl border-white/10"
-  onMouseMove={handleMouseMove}
->
-  <motion.div
-    className="absolute transition duration-300 opacity-0 pointer-events-none -inset-px rounded-xl group-hover:opacity-100"
-    style={{
-      background: useMotionTemplate`
-        radial-gradient(
-          650px circle at ${mouseX}px ${mouseY}px,
-          rgba(14, 165, 233, 0.15),
-          transparent 80%
-        )
-      `,
-    }}
-  />
-  <div>
-    <h3 className="text-base font-semibold leading-7 text-sky-500">
-      Byline
-    </h3>
-    <div className="flex items-center mt-2 gap-x-2">
-      <span className="text-5xl font-bold tracking-tight text-white">
-        Hero
-      </span>
+        <h2 className="text-2xl font-bold text-black dark:text-white text-balance">
+          {titulo}
+        </h2>
+        <p className="text-xs dark:text-zinc-300 text-zinc-700 text-pretty">
+          {descripcion}
+        </p>
+      </div>
     </div>
-    <p className="mt-6 text-base leading-7 text-gray-300">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit, facilis
-      illum eum ullam nostrum atque quam.
-    </p>
-  </div>
-</div> */
+  );
 }

@@ -18,7 +18,7 @@ export default function NavigationMenu() {
         "gap-5"
       ]}}>
       <NavbarBrand>
-        <Avatar size="lg" src="/esteban-avatar.webp" aria-label="Foto de Esteban Montecinos"/>
+        <Avatar size="lg" src="/esteban-icon.webp" aria-label="Foto de Esteban Montecinos"/>
       </NavbarBrand>
       <NavbarContent justify="center">
         <NavbarItem>
@@ -30,7 +30,7 @@ export default function NavigationMenu() {
       </NavbarContent>
       <NavbarContent justify="end">
       <NavbarItem>
-        <p className="text-sm font-light dark:text-zinc-400 text-zinc-700">2023</p>
+        <p className="text-sm font-light dark:text-zinc-400 text-zinc-700">2024</p>
       </NavbarItem>
       </NavbarContent>
     </Navbar>

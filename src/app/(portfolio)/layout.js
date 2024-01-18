@@ -11,23 +11,20 @@ export const metadata = {
   openGraph: {
     title: "Portafolio de Esteban Montecinos | Desarrollador y Programador Web",
     description: "Ingeniero en Informática y Desarrollador Full Stack con React, Next.js y Tailwind CSS",
-    url: "https://estebanmontecinos.dev",
     siteName: "Esteban Montecinos",
     images: [
       {
         url: "/esteban-avatar.webp",
-        width: 648,
-        height: 648,
+        width: 500,
+        height: 500,
       },
-    ],
-    locale: "es_CL",
-    type: "website",
+    ]
   }
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es">
+    <html lang="en">
       <body
         className={`${GeistSans.className} min-h-screen dark:text-white text-black`}
       >
