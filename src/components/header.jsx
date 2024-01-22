@@ -10,14 +10,14 @@ export default function Header() {
             <strong className="font-semibold">Esteban Montecinos.</strong>
           </h1>
           <h2 className="text-xl font-normal text-pretty md:text-2xl ">
-            Ingeniero en Informática y Desarrollador <strong>Full Stack.</strong>
+            Ingeniero en Informática y Desarrollador <strong className="font-semibold">Full Stack.</strong>
           </h2>
         </header>
 
-        <p className="text-lg leading-relaxed tracking-wide text-left text-pretty md:text-xl dark:text-zinc-400 text-zinc-700">
-          Me gusta trabajar con <strong>React, Next.js y Tailwind CSS</strong>,
-          mi enfoque está en crear <strong>experiencias de usuario</strong>
-          intuitivas y receptivas que mejoren la interacción entre las personas
+        <p className="text-lg leading-relaxed tracking-wide text-left text-pretty md:text-xl dark:text-zinc-300 text-zinc-800">
+          Me gusta trabajar con <strong className="font-semibold text-black dark:text-white">React, Next.js y Tailwind CSS</strong>,
+          mi enfoque está en crear <strong className="font-semibold text-black dark:text-white">experiencias de usuario
+          intuitivas y receptivas</strong> que mejoren la interacción entre las personas
           y la tecnología.
         </p>
         <FooterContactos />
