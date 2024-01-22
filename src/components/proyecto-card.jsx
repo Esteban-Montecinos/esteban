@@ -21,7 +21,7 @@ export default function ProyectoCard({
     mouseY.set(clientY - top);
   }
   return (
-    <div className="flex flex-col w-full gap-3 transition-all group">
+    <article className="flex flex-col w-full gap-3 transition-all group">
       <div
         onMouseMove={handleMouseMove}
         className="relative flex flex-col transition-all duration-75 group/img group-hover:-translate-y-2"
@@ -105,6 +105,6 @@ export default function ProyectoCard({
           {descripcion}
         </p>
       </div>
-    </div>
+    </article>
   );
 }
