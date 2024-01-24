@@ -1,16 +1,17 @@
 import "../globals.css";
-import { GeistSans } from 'geist/font'
+import { GeistSans } from "geist/font";
 import { Providers } from "../providers";
 import NavigationMenu from "../../components/navigation-menu";
 import Footer from "@/components/footer";
 
-
 export const metadata = {
   title: "Portafolio de Esteban Montecinos | Desarrollador y Programador Web",
-  description: "Ingeniero en Informática y Desarrollador Full Stack con React, Next.js y Tailwind CSS",
+  description:
+    "Ingeniero en Informática y Desarrollador Full Stack con React, Next.js y Tailwind CSS",
   openGraph: {
     title: "Portafolio de Esteban Montecinos | Desarrollador y Programador Web",
-    description: "Ingeniero en Informática y Desarrollador Full Stack con React, Next.js y Tailwind CSS",
+    description:
+      "Ingeniero en Informática y Desarrollador Full Stack con React, Next.js y Tailwind CSS",
     siteName: "Esteban Montecinos",
     images: [
       {
@@ -18,8 +19,8 @@ export const metadata = {
         width: 500,
         height: 500,
       },
-    ]
-  }
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -28,13 +29,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${GeistSans.className} min-h-screen dark:text-white text-black`}
       >
-         <div className="absolute top-0 w-full h-full bg-white -z-10 dark:bg-black">
-          <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full dark:bg-lime-800 bg-lime-400 opacity-50 blur-[100px]"></div>
-        </div>
+        <div className="fixed left-0 top-0 -z-10 h-screen w-screen bg-zinc-200 dark:bg-zinc-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(132,204,22,0.3),rgba(255,255,255,0))] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(63,98,18,0.3),rgba(255,255,255,0))]"></div>
         <Providers>
-          <NavigationMenu/>
+          <NavigationMenu />
           {children}
-          <Footer/>
+          <Footer />
         </Providers>
       </body>
     </html>

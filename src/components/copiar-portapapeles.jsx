@@ -24,7 +24,7 @@ export default function CopiarPortapapeles() {
         type="button"
         aria-label="Copiar Código QR"
         title="Copiar Código QR"
-        className="inline-flex items-center p-2 text-sm text-white transition-colors bg-black border border-black rounded-full dark:text-black dark:bg-white dark:border-white hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white"
+        className="inline-flex items-center p-2 text-sm text-white transition-colors bg-black border border-black rounded-full dark:text-black dark:bg-white dark:border-white hover:bg-transparent hover:text-black dark:hover:text-white"
       >
       <IconQrcode/>
       </button>

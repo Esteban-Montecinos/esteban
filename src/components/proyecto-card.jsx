@@ -28,7 +28,7 @@ export default function ProyectoCard({
       >
         <img
           src={img}
-          className="border-2 shadow-2xl rounded-xl size-full aspect-video dark:border-white/10 border-black/10"
+          className="border shadow-2xl rounded-xl size-full aspect-video dark:border-white/10 border-black/10"
           alt={`proyecto desarrollado por Esteban Montecinos, ${titulo}`}
         />
         <motion.div

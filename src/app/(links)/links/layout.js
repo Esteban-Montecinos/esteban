@@ -26,9 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className={`${GeistSans.className}  min-h-screen`}>
-        <div className="absolute top-0 w-full h-full bg-white -z-10 dark:bg-black">
-          <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full dark:bg-lime-800 bg-lime-400 opacity-50 blur-[80px]"></div>
-        </div>
+      <div className="fixed left-0 top-0 -z-10 h-screen w-screen bg-zinc-200 dark:bg-zinc-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(132,204,22,0.3),rgba(255,255,255,0))] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(63,98,18,0.3),rgba(255,255,255,0))]"></div>
         <Providers>
           {children}
           <footer className="mt-4 border-t dark:border-zinc-800 border-zinc-400">

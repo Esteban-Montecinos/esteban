@@ -27,13 +27,13 @@ export default function LinksPage() {
         Ingeniero en Informática.
       </p>
       <NextLink
-        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-transparent hover:bg-transparent dark:hover:text-white hover:text-black"
         href="/"
       >
         Portafolio
       </NextLink>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-transparent hover:bg-transparent dark:hover:text-white hover:text-black"
         href={cv}
         size="sm"
         isExternal
@@ -41,7 +41,7 @@ export default function LinksPage() {
         Currículum Vitae
       </Link>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-transparent hover:bg-transparent dark:hover:text-white hover:text-black"
         href="mailto:estebanmontecinos2001@gmail.com"
         size="sm"
         isExternal
@@ -50,7 +50,7 @@ export default function LinksPage() {
       </Link>
       <h2 className="text-black dark:text-white">Redes Sociales</h2>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-transparent hover:bg-transparent dark:hover:text-white hover:text-black"
         href="https://www.linkedin.com/in/esteban-montecinos/"
         size="sm"
         isExternal
@@ -58,7 +58,7 @@ export default function LinksPage() {
         LinkedIn
       </Link>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-transparent hover:bg-transparent dark:hover:text-white hover:text-black"
         href="https://github.com/Esteban-Montecinos"
         size="sm"
         isExternal
@@ -66,7 +66,7 @@ export default function LinksPage() {
         GitHub
       </Link>
       <Link
-        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white hover:text-black"
+        className="flex flex-row items-center justify-center w-full p-4 text-base font-medium text-white transition-colors bg-black border-2 border-black rounded-full dark:border-white dark:bg-white dark:text-black dark:hover:bg-transparent hover:bg-transparent dark:hover:text-white hover:text-black"
         href="https://www.instagram.com/estebannmontecinos/"
         size="sm"
         isExternal

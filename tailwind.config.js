@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       "animation": {
-        "background-shine": "background-shine 2s linear infinite",
+        "background-shine": "background-shine 1.5s linear infinite",
         "border-width": "border-width 3s infinite alternate"
       },
       "keyframes": {

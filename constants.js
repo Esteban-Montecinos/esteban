@@ -1,4 +1,5 @@
-import { IconBrandRedux, IconBrandTypescript } from "@tabler/icons-react";
+import { IconBrandGmail } from "@tabler/icons-react";
+import { IconBrandLinkedin, IconBrandRedux, IconBrandTypescript, IconFileCv } from "@tabler/icons-react";
 import {
   IconBrandGithub,
   IconBrandAndroid,
@@ -320,3 +321,25 @@ export const tecnologias = [
 ];
 export const cv =
   "https://drive.google.com/file/d/1Geo11vo0uYd-1ECh8gW0DoMyNuq_Y6IU/view?usp=sharing";
+export const LINKS = [
+    {
+      href: "https://github.com/Esteban-Montecinos",
+      title: "GitHub",
+      Icon: (props) => <IconBrandGithub {...props}/>,
+    },
+    {
+      href: "https://www.linkedin.com/in/esteban-montecinos/",
+      title: "LinkedIn",
+      Icon: (props) => <IconBrandLinkedin {...props}/>,
+    },
+    {
+      href: cv,
+      title: "Currículum Vitae",
+      Icon: (props) => <IconFileCv {...props}/>,
+    },
+    {
+      href: "mailto:estebanmontecinos2001@gmail.com",
+      title: "Gmail Esteban Montecinos",
+      Icon: (props) => <IconBrandGmail {...props}/>,
+    },
+  ];

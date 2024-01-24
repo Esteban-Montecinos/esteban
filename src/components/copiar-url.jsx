@@ -20,7 +20,7 @@ export default function CopiarURL() {
         type="button"
         aria-label="Copiar URL"
         title="Copiar URL"
-        className="inline-flex items-center p-2 text-sm text-white transition-colors bg-black border border-black rounded-full dark:text-black dark:bg-white dark:border-white hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white"
+        className="inline-flex items-center p-2 text-sm text-white transition-colors bg-black border border-black rounded-full dark:text-black dark:bg-white dark:border-white hover:bg-transparent hover:text-black dark:hover:text-white"
       >
         <IconLink/>
       </button>
