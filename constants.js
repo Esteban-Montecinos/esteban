@@ -24,6 +24,7 @@ export const proyectos = [
     id: "11",
     titulo: "Hue Wave",
     src: "/projects/huewave.webm",
+    img: "/projects/huewave.webp",
     fecha: "01/10/2024",
     descripcion:
       "Generador de gradientes personalizados con colores de Tailwind CSS, crea, copia y comparte gradiente con soporte para clases de Tailwind y CSS, también puedes guardar tu gradiente como imagen y compartirlo como enlace y ver una preview del gradiente gracias a OpenGraph",
@@ -45,6 +46,7 @@ export const proyectos = [
     id: "12",
     titulo: "3D Aim Trainer",
     src: "/projects/aim.webm",
+    img: "/projects/aim.webp",
     fecha: "01/02/2024",
     descripcion:
       "Mini juego en el que hay que disparar al mayor número de esferas en 20 segundos, este juego lo realize con el objetivo de aprender Three.js y aprendí muchas cosas sobre la iluminación en un espacio 3D, la posición y rotación de objetos, cargado de modelos, texturas y órbitas.",
@@ -64,6 +66,7 @@ export const proyectos = [
   {
     id: "9",
     src: "/projects/github.webm",
+    img: "/projects/github.webp",
     fecha: "12/29/2023",
     titulo: "Buscador Perfil GitHub",
     descripcion:
@@ -82,6 +85,7 @@ export const proyectos = [
   {
     id: "7",
     src: "/projects/steam.webm",
+    img: "/projects/steam.webp",
     fecha: "08/30/2023",
     titulo: "Steam Finder Connect",
     descripcion:
@@ -99,6 +103,7 @@ export const proyectos = [
   {
     id: "6",
     src: "/projects/clonx.webm",
+    img: "/projects/clonx.webp",
     fecha: "08/07/2023",
     titulo: "Clon de Twitter | *MNTree",
     descripcion:
@@ -116,6 +121,7 @@ export const proyectos = [
   {
     id: "8",
     src: "/projects/calculadora.webm",
+    img: "/projects/calculadora.webp",
     fecha: "07/31/2023",
     titulo: "Calculadora de edad",
     descripcion:
@@ -132,6 +138,7 @@ export const proyectos = [
   {
     id: "2",
     src: "/projects/frontendmentor.webm",
+    img: "/projects/frontendmentor.webp",
     fecha: "07/25/2023",
     titulo: "Frontend Mentor Challenges",
     descripcion:
@@ -148,6 +155,7 @@ export const proyectos = [
   {
     id: "1",
     src: "/projects/preguntas.webm",
+    img: "/projects/preguntas.webp",
     fecha: "07/24/2023",
     titulo: "Preguntas anónimas",
     descripcion:
