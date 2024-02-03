@@ -23,7 +23,7 @@ export const proyectos = [
   {
     id: "11",
     titulo: "Hue Wave",
-    img: "/projects/huewave.webp",
+    src: "/projects/huewave.webm",
     fecha: "01/10/2024",
     descripcion:
       "Generador de gradientes personalizados con colores de Tailwind CSS, crea, copia y comparte gradiente con soporte para clases de Tailwind y CSS, también puedes guardar tu gradiente como imagen y compartirlo como enlace y ver una preview del gradiente gracias a OpenGraph",
@@ -44,7 +44,7 @@ export const proyectos = [
   {
     id: "12",
     titulo: "3D Aim Trainer",
-    img: "/projects/aim.webp",
+    src: "/projects/aim.webm",
     fecha: "01/02/2024",
     descripcion:
       "Mini juego en el que hay que disparar al mayor número de esferas en 20 segundos, este juego lo realize con el objetivo de aprender Three.js y aprendí muchas cosas sobre la iluminación en un espacio 3D, la posición y rotación de objetos, cargado de modelos, texturas y órbitas.",
@@ -63,7 +63,7 @@ export const proyectos = [
   },
   {
     id: "9",
-    img: "/projects/github.webp",
+    src: "/projects/github.webm",
     fecha: "12/29/2023",
     titulo: "Buscador Perfil GitHub",
     descripcion:
@@ -81,7 +81,7 @@ export const proyectos = [
   },
   {
     id: "7",
-    img: "/projects/steam.webp",
+    src: "/projects/steam.webm",
     fecha: "08/30/2023",
     titulo: "Steam Finder Connect",
     descripcion:
@@ -98,7 +98,7 @@ export const proyectos = [
   },
   {
     id: "6",
-    img: "/projects/clonx.webp",
+    src: "/projects/clonx.webm",
     fecha: "08/07/2023",
     titulo: "Clon de Twitter | *MNTree",
     descripcion:
@@ -115,7 +115,7 @@ export const proyectos = [
   },
   {
     id: "8",
-    img: "/projects/calculadora.webp",
+    src: "/projects/calculadora.webm",
     fecha: "07/31/2023",
     titulo: "Calculadora de edad",
     descripcion:
@@ -131,7 +131,7 @@ export const proyectos = [
   },
   {
     id: "2",
-    img: "/projects/frontendmentor.webp",
+    src: "/projects/frontendmentor.webm",
     fecha: "07/25/2023",
     titulo: "Frontend Mentor Challenges",
     descripcion:
@@ -147,7 +147,7 @@ export const proyectos = [
   },
   {
     id: "1",
-    img: "/projects/preguntas.webp",
+    src: "/projects/preguntas.webm",
     fecha: "07/24/2023",
     titulo: "Preguntas anónimas",
     descripcion:
@@ -170,21 +170,21 @@ export const educacion = [
     fecha: "Agosto 2021 - Diciembre 2022",
     nombre: "Inacap Sede Osorno",
     titulo: "Ingeniería En Informática",
-    image_url: "/inacap.webp",
+    image_url: "/inacap.webm",
   },
   {
     id: "2",
     fecha: "Marzo 2019 - Junio 2021",
     nombre: "Inacap Sede Osorno",
     titulo: "Analista Programador",
-    image_url: "/inacap.webp",
+    image_url: "/inacap.webm",
   },
   {
     id: "3",
     fecha: "Marzo 2017 - Diciembre 2018",
     nombre: "Instituto Comercial Osorno",
     titulo: "Programador Nivel Medio",
-    image_url: "/ico.webp",
+    image_url: "/ico.webm",
   },
 ];
 export const tecnologias = [

@@ -1,9 +1,10 @@
 "use client";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { formatDate } from "../../lib/fecha-format";
+import { useRef } from "react";
 
 export default function ProyectoCard({
-  img,
+  src,
   titulo,
   fecha,
   descripcion,
@@ -14,6 +15,16 @@ export default function ProyectoCard({
   let mouseX = useMotionValue(0);
   let mouseY = useMotionValue(0);
 
+  const videoRed = useRef()
+
+  function onMouseOver(){
+    videoRed.current.play();
+  }
+
+  function onMouseOut(){
+    videoRed.current.pause();
+  }
+
   function handleMouseMove({ currentTarget, clientX, clientY }) {
     let { left, top } = currentTarget.getBoundingClientRect();
 
@@ -21,16 +32,20 @@ export default function ProyectoCard({
     mouseY.set(clientY - top);
   }
   return (
-    <article className="flex flex-col w-full gap-3 transition-all group">
+    <article className="flex flex-col w-full gap-3 transition-all group" onMouseOver={onMouseOver} onMouseOut={onMouseOut}>
       <div
         onMouseMove={handleMouseMove}
         className="relative flex flex-col transition-all duration-75 group/img group-hover:-translate-y-2"
       >
-        <img
-          src={img}
-          className="border shadow-2xl rounded-xl size-full aspect-video dark:border-white/10 border-black/10"
-          alt={`proyecto desarrollado por Esteban Montecinos, ${titulo}`}
-        />
+        <video
+        ref={videoRed}
+          preload="metadata"
+          muted
+          loop
+          className="object-cover border shadow-2xl rounded-xl size-full aspect-video dark:border-white/10 border-black/10"
+        >
+          <source src={`${src}#t=1.5`} type="video/webm" />
+        </video>
         <motion.div
           className="absolute transition duration-300 opacity-0 pointer-events-none group-hover/img:opacity-100 -inset-px rounded-xl"
           style={{
